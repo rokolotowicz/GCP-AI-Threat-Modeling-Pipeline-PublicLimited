@@ -352,7 +352,6 @@ A threat is **confirmed** only when evidence actually lands in its element; othe
 | Semgrep `scanner_skipped` (TaskGroup error) | `semgrep mcp` phones `semgrep.dev` for OAuth at startup → ConnectTimeout under deny-all egress | Replace with a FastMCP wrapper over `semgrep scan` (offline) |
 | Semgrep `semgrep_ok findings=0` on crAPI | The raw `semgrep-rules` *repo* as a single `--config` loads ~0 usable rules | Bake curated rule **packs** (`/c/p/default`, `/c/p/security-audit`, `/c/p/owasp-top-ten`) |
 | `confirmed=13/13` (everything confirmed) | Naive 1:1 correlator | Evidence→service→element correlation (above) |
-| "My fix didn't take effect" across rebuilds | Edits on the laptop, `docker build` on the VM → stale code | `git push` (laptop) → `git pull` (VM) **before** building; sanity-check with `grep` |
 
 ---
 
