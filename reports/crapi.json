@@ -1,0 +1,82 @@
+    "dfd": {
+        "elements": [
+            {
+                "id": "ext-client",
+                "name": "API Client",
+                "type": "external",
+                "trust_boundary": "internet"
+            },
+            {
+                "id": "proc-crapi-identity",
+                "name": "crapi-identity",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-crapi-community",
+                "name": "crapi-community",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-crapi-workshop",
+                "name": "crapi-workshop",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-crapi-chatbot",
+                "name": "crapi-chatbot",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-crapi-web",
+                "name": "crapi-web",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-postgresdb",
+                "name": "postgresdb",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-mongodb",
+                "name": "mongodb",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-chromadb",
+                "name": "chromadb",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-mailhog",
+                "name": "mailhog",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "proc-api.mypremiumdealership.com",
+                "name": "api.mypremiumdealership.com",
+                "type": "process",
+                "trust_boundary": "app"
+            },
+            {
+                "id": "db-main",
+                "name": "Primary DB",
+                "type": "datastore",
+                "trust_boundary": "data"
+            }
+        ],
+        "trust_boundaries": [
+            "internet",
+            "app",
+            "data"
+        ]
+    },
+    "threats": [
